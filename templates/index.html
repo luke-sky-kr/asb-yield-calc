@@ -104,6 +104,10 @@
             <input type="number" step="any" name="std_dev" id="std_dev" required value="{{ std_dev }}">
             <label for="kpi_criteria">KPI 기준 <span style="font-size:0.95em; color:#888;">(AC 성능 x 10)</span></label>
             <input type="number" step="any" name="kpi_criteria" id="kpi_criteria" required>
+            <label for="price_max">판가 상한</label>
+            <input type="number" step="any" name="price_max" id="price_max" required value="{{ price_max }}">
+            <label for="price_min">판가 하한</label>
+            <input type="number" step="any" name="price_min" id="price_min" required value="{{ price_min }}">
             <button type="submit">ASB 수율 계산</button>
         </form>
         <form method="post" action="/reset" style="margin-top:1rem; text-align:center;">
